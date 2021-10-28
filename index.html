@@ -1,0 +1,42 @@
+<!--
+File: index.html
+GUI Assignment: Creating a functional multiplication table
+Raj Vekeria, UMass Lowell Computer Science, rvekeria@cs.uml.edu
+Copyright(c) 2021 by Raj. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author
+updated by RV on October 21, 2021 at 9:30 AM
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Multiplication Table</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id = "wrapper">
+            <header>Multiplication Table</header>
+            <!--
+                Reference: https://www.w3schools.com/html/html_forms.asp
+            -->
+            <form>
+                <div class='form-group'>
+                    <label for = "rowmin">Minimum Row Value:</label><br>
+                    <input type = "number" id = "rowmin" placeholder = "Enter an integer">
+                    <label for = "rowmax">Maximum Row Value:</label><br>
+                    <input type = "number" id = "rowmax" placeholder = "Enter an integer">
+                    <label for = "colmin">Minimum Column Value:</label><br>
+                    <input type = "number" id = "colmin" placeholder = "Enter an integer">
+                    <label for = "colmin">Maximum Column Value:</label><br>
+                    <input type = "number" id = "colmax" placeholder = "Enter an integer"><br>
+                    <button type = "button" class="btn btn-primary mt-2 ml-3" id = "submit-btn">Submit</button>
+                    <button type = "button" class="btn btn-primary mt-2" id = "clear-btn" onclick="clr()">Clear</button>
+                </div>
+            </form>
+            <div id="table-container"></div>
+            <script src="js/add-content.js"></script>
+        </div>
+    </body>
+</html>
