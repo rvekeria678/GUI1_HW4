@@ -11,32 +11,62 @@ updated by RV on October 21, 2021 at 9:30 AM
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1">
         <title>Multiplication Table</title>
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
-        <div id = "wrapper">
-            <header>Multiplication Table</header>
-            <!--
-                Reference: https://www.w3schools.com/html/html_forms.asp
-            -->
-            <form>
-                <div class='form-group'>
-                    <label for = "rowmin">Minimum Row Value:</label><br>
-                    <input type = "number" id = "rowmin" placeholder = "Enter an integer">
-                    <label for = "rowmax">Maximum Row Value:</label><br>
-                    <input type = "number" id = "rowmax" placeholder = "Enter an integer">
-                    <label for = "colmin">Minimum Column Value:</label><br>
-                    <input type = "number" id = "colmin" placeholder = "Enter an integer">
-                    <label for = "colmin">Maximum Column Value:</label><br>
-                    <input type = "number" id = "colmax" placeholder = "Enter an integer"><br>
-                    <button type = "button" class="btn btn-primary mt-2 ml-3" id = "submit-btn">Submit</button>
-                    <button type = "button" class="btn btn-primary mt-2" id = "clear-btn" onclick="clr()">Clear</button>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12" id="title">Multiplication Table</div>
+                <div class="col-sm-12 col-md-3" id="navbar">
+                    <form>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label class="mr-2" for="rowmin">Minimum Row Value</label>
+                                </div>
+                                <div class="col-sm-12">
+                                    <input type="number" id="rowmin" placeholder="Enter an integer">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label class="mr-2" for="rowmax">Maximum Row Value</label>
+                                </div>
+                                <div class="col-sm-12">
+                                    <input type="number" id="rowmax" placeholder="Enter an integer">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label class="mr-2" for="colmin">Minimum Column Value</label>
+                                </div>
+                                <div class="col-sm-12">
+                                    <input type="number" id="colmin" placeholder="Enter an integer">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label class="mr-2" for="colmax">Maximum Column Value</label>
+                                </div>
+                                <div class="col-sm-12">
+                                    <input type="number" id="colmax" placeholder="Enter an integer">
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-outline-light mt-3" id="submit-btn">Submit</button>
+                            <button type="button" class="btn btn-outline-light ml-1 mt-3" id="clear-btn">Clear</button>
+                            <button type="button" class="btn btn-outline-light ml-1 mt-3">Save</button>
+                        </div>
+                    </form>
                 </div>
-            </form>
-            <div id="table-container"></div>
-            <script src="js/add-content.js"></script>
+                <div class="col-sm-12 col-md-9">
+                    <div class="m-3" id="table-container"></div>
+                </div>
+            </div>
         </div>
+        <script src="js/add-content.js"></script>
     </body>
 </html>
