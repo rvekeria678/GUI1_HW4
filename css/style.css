@@ -16,20 +16,35 @@ updated by RV on October 21, 2021 at 9:30 AM
 }
 #navbar {
     background-color: rgb(71, 71, 71);
-    min-height: 2000px;
     padding: 30px;
+    height: auto;
 }
-#tblcontent {
-    border: solid white 4px;
-    background: transparent;
-    border-bottom: ridge white 4px;
+#table-container {
+    overflow: scroll;
+    border: double 7px rgb(71, 71, 71);
 }
 form {
     color: white;
+    text-align: center;
+}
+table {
+    table-layout: fixed;
+    width: 100%;
 }
 td {
     border: solid black 3px;
+    text-align: center;
+    width: 50px;
 }
-td:first-child {
-    background-color: yellow;
+tr:hover {
+    background-color:rgb(153, 213, 218);
+}
+td:hover {
+    background-color: orange;
+}
+td:first-child, tr:first-child{
+    background-color: rgb(150, 197, 144);
+}
+#rowmin, #rowmax, #colmin, #colmax {
+    width: 150px;
 }
