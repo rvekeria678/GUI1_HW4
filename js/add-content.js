@@ -1,5 +1,8 @@
 $(document).ready(function(){
     $("#table-container").hide();
+    
+    $("#commentform").validate();
+
     $("#submit-btn").click(function(){
         $("#table-container").show();
         $("#clear-btn").prop("disabled", false);

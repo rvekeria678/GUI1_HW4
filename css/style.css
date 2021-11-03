@@ -6,6 +6,12 @@ Copyright(c) 2021 by Raj. All rights reserved. May be freely copied or
 excerpted for educational purposes with credit to the author
 updated by RV on October 21, 2021 at 9:30 AM
 */
+body, html {
+    height: 100%;
+}
+#wrapper {
+    height: 100%;
+}
 #title {
     background-color: rgb(93, 107, 151);
     text-align: center;
@@ -21,20 +27,26 @@ updated by RV on October 21, 2021 at 9:30 AM
 }
 #table-container {
     overflow: scroll;
-    border: double 7px rgb(71, 71, 71);
+    border: double 7px rgb(255, 255, 255);
 }
 form {
-    color: white;
     text-align: center;
+    font-size: 20px;
+    color: white;
 }
 table {
     table-layout: fixed;
     width: 100%;
+    background: white;
 }
 td {
     border: solid black 3px;
     text-align: center;
     width: 50px;
+}
+
+#rowmin, #rowmax, #colmin, #colmax {
+    width: 180px;
 }
 tr:hover {
     background-color:rgb(153, 213, 218);
@@ -45,6 +57,9 @@ td:hover {
 td:first-child, tr:first-child{
     background-color: rgb(150, 197, 144);
 }
-#rowmin, #rowmax, #colmin, #colmax {
-    width: 150px;
+.error {
+    color: red;
+}
+select.error, textarea.error, input.error {
+    color: red;
 }

@@ -17,17 +17,18 @@ updated by RV on October 21, 2021 at 9:30 AM
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/jquery.validate.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid" id="wrapper">
             <div class="row">
                 <div class="col-xs-12 col-md-12" id="title">Multiplication Table</div>
                 <div class="col-xs-12 col-md-3 col-lg-2" id="navbar">
-                    <form id="tableform">
-                        <div class="form-group">
+                    <form id="commentform">
+                        <fieldset>
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <label class="mr-2" for="rowmin">Minimum Row Value</label>
+                                    <label class="mr-2" for="rowmin">Minimum Row Value:</label>
                                 </div>
                                 <div class="col-sm-12">
                                     <input type="number" id="rowmin" min="-50" max="50" placeholder="Enter an integer" required>
@@ -35,7 +36,7 @@ updated by RV on October 21, 2021 at 9:30 AM
                             </div>
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <label class="mr-2" for="rowmax">Maximum Row Value</label>
+                                    <label class="mr-2" for="rowmax">Maximum Row Value:</label>
                                 </div>
                                 <div class="col-sm-12">
                                     <input type="number" id="rowmax" min="-50" max="50" placeholder="Enter an integer" required>
@@ -43,7 +44,7 @@ updated by RV on October 21, 2021 at 9:30 AM
                             </div>
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <label class="mr-2" for="colmin">Minimum Column Value</label>
+                                    <label class="mr-2" for="colmin">Minimum Column Value:</label>
                                 </div>
                                 <div class="col-sm-12">
                                     <input type="number" id="colmin" min="-50" max="50" placeholder="Enter an integer" required>
@@ -51,7 +52,7 @@ updated by RV on October 21, 2021 at 9:30 AM
                             </div>
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <label class="mr-2" for="colmax">Maximum Column Value</label>
+                                    <label class="mr-2" for="colmax">Maximum Column Value:</label>
                                 </div>
                                 <div class="col-sm-12">
                                     <input type="number" id="colmax" min="-50" max="50" placeholder="Enter an integer" required>
@@ -60,7 +61,7 @@ updated by RV on October 21, 2021 at 9:30 AM
                             <button type="button" class="btn btn-outline-light mt-3" id="submit-btn">Submit</button>
                             <button type="button" class="btn btn-outline-light ml-1 mt-3" id="clear-btn">Clear</button>
                             <button type="button" class="btn btn-outline-light ml-1 mt-3" id="save-btn">Save</button>
-                        </div>
+                        </fieldset>
                     </form>
                 </div>
                 <div class="col-xs-12 col-md-9 col-lg-10">
@@ -68,7 +69,6 @@ updated by RV on October 21, 2021 at 9:30 AM
                 </div>
             </div>
         </div>
-<!--    <script>$("#tableform").validate()</script>  -->
-        <script src="js/add-content.js"></script>
+    <script src="js/add-content.js"></script>
     </body>
 </html>
