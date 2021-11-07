@@ -18,11 +18,13 @@ body, html {
     font-size: 45px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    border-bottom: ridge white 4px;
+    border: ridge white 4px;
 }
 #navbar {
     background-color: rgb(71, 71, 71);
     padding: 30px;
+    border: ridge white 4px;
+    border-top: none;
     height: auto;
 }
 #table-container {
@@ -59,7 +61,11 @@ td:first-child, tr:first-child{
 }
 .error {
     color: red;
+    width: 100%;
 }
-select.error, textarea.error, input.error {
-    color: red;
+#rowswp, #colswp {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
 }
+
