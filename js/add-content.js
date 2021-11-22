@@ -1,8 +1,17 @@
+/*
+File: add-content.js
+GUI Assignment: Creating a functional multiplication table
+Raj Vekeria, UMass Lowell Computer Science, rvekeria@cs.uml.edu
+Copyright(c) 2021 by Raj. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author
+updated by RV on November 21, 2021 at 9:30 AM
+*/
 $(document).ready(function(){
     $("#rowswp").hide();
     $("#colswp").hide();
     $("#table-container").hide();
     $("#save-btn").prop("disabled", true);
+    // Reference: https://jqueryvalidation.org/
     var iform = $("#inputform");
     var validator = $("#inputform").validate({
         rules: {
